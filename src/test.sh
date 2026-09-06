@@ -1,4 +1,6 @@
 #!/bin/bash
+cd src
+npm test
 
 #src/test.sh
 EXPECTED="Hello, Test!"
