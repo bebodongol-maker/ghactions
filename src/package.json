@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "description": "a simple Node.js application for github actions PR testing",
     "main": "src/app.js",
-    "scripts": {
-        "test": "bash src/test.sh"
-    },
+"scripts": {
+    "test": "bash test.sh"
+},
     "dependencies": {}
 }
