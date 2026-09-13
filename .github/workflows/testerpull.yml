@@ -1,0 +1,22 @@
+name: automatic tester on pull
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  pull-check:
+      runs-on: ubuntu-latest
+      steps:
+        - name: check code
+          uses: actions/checkout@v4
+
+        - name: build output file
+          run: run echo "build output file" > build.txt
+          
+        - name: upload built output
+          uses: actions/upload-artifact@v4
+          with:
+            name: my-build-artifact
+            path: build.txt
